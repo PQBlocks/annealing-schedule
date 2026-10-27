@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "pqblocks-anneal-schedule"
+version: "0.1.0"
+license: Apache-2.0
+repository-code: "https://github.com/PQBlocks/annealing-schedule"
+authors:
+  - name: "The PQBlocks Authors"
+keywords:
+  - annealing-schedule
+  - simulated-annealing
+  - quantum-inspired
+  - ising
+  - qubo
+  - adaptive-schedule
+  - numba
+  - msgpack
+abstract: "Quantum-inspired instance-adaptive simulated annealing with statistics-driven schedule generation for Ising and QUBO optimization problems. Quantum-inspired classical optimization, not cryptography."

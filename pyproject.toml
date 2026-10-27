@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pqblocks-anneal-schedule"
+version = "0.1.0"
+description = "Quantum-inspired instance-adaptive simulated annealing with statistics-driven schedule generation for Ising and QUBO optimization problems. Quantum-inspired classical optimization, not cryptography."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.11"
+authors = [{name = "The PQBlocks Authors"}]
+keywords = ["annealing-schedule", "simulated-annealing", "quantum-inspired", "ising", "qubo", "adaptive-schedule", "numba", "msgpack"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = ["msgpack", "numba", "numpy", "scipy", "numpy", "numba", "msgpack"]
+
+[project.optional-dependencies]
+test = ["pytest", "numpy", "numba", "msgpack"]
+
+[project.urls]
+Homepage = "https://github.com/PQBlocks/annealing-schedule"
+Documentation = "https://github.com/PQBlocks/annealing-schedule#readme"
+Source = "https://github.com/PQBlocks/annealing-schedule"
+Changelog = "https://github.com/PQBlocks/annealing-schedule/blob/main/CHANGELOG.md"
+Issues = "https://github.com/PQBlocks/annealing-schedule/issues"
+Security = "https://github.com/PQBlocks/annealing-schedule/security/policy"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
